@@ -2,6 +2,7 @@ import { Header } from "@/app-logic/shared/components/Header";
 import { Hero } from "@/app-logic/modules/principal-landing/components/hero";
 import { WhoWeAre } from "@/app-logic/modules/principal-landing/components/whoWeAre";
 import { FocusAreas } from "@/app-logic/modules/principal-landing/components/focusAreas";
+import { FeaturedProjects } from "@/app-logic/modules/principal-landing/components/featuredProjects";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <WhoWeAre />
       <FocusAreas />
+      <FeaturedProjects />
     </div>
   );
 }
