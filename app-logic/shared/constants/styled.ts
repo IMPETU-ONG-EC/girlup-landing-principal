@@ -1,0 +1,1 @@
+export const MINIMUN_PADDING_SECTIONS = "px-4 md:px-10"
