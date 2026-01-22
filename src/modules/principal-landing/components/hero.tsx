@@ -1,6 +1,6 @@
 "use client";
 
-import { MINIMUN_PADDING_SECTIONS } from "@/app-logic/shared/constants/styled";
+import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";

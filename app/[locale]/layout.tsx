@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { type Locale, routing } from "@/src/i18n/routing";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { JsonLd, orgSchema, websiteSchema } from "@/src/seo/jsonld";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,17 +23,37 @@ export const metadata: Metadata = {
     "Movimiento juvenil que empodera a las niñas y juventud para lograr la igualdad y justicia en Ecuador. Parte de la iniciativa global de la Fundación de las Naciones Unidas.",
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
+}
+
+
+export default async function LocaleLayout({
   children,
+  params
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+  params: Promise<{locale: string}>;
+}>){
+  const {locale} = await params;
+
+  if (!hasLocale(routing.locales, locale)) notFound();
+
+  setRequestLocale(locale);
+
+  const messages = await getMessages();
   return (
-    <html lang="es">
+     <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background-light dark:bg-background-dark text-[#141118] dark:text-white`}
       >
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {/* Schemas globales */}
+          <JsonLd data={orgSchema(locale as Locale)} />
+          <JsonLd data={websiteSchema(locale as Locale)} />
+
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

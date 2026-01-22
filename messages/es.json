@@ -1,0 +1,14 @@
+{
+  "Home": {
+    "title": "LOREM_IPSUM_HOME_TITLE_ES",
+    "description": "LOREM_IPSUM_HOME_DESC_ES"
+  },
+  "About": {
+    "title": "LOREM_IPSUM_ABOUT_TITLE_ES",
+    "description": "LOREM_IPSUM_ABOUT_DESC_ES"
+  },
+  "Contact": {
+    "title": "LOREM_IPSUM_CONTACT_TITLE_ES",
+    "description": "LOREM_IPSUM_CONTACT_DESC_ES"
+  }
+}

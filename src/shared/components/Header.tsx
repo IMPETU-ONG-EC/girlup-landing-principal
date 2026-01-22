@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { MINIMUN_PADDING_SECTIONS } from "@/app-logic/shared/constants/styled";
+import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
 import { cn } from "@/lib/utils";
 
 export function Header() {
