@@ -124,7 +124,7 @@ export default async function LocaleLayout({
           <div className="relative flex h-auto min-h-screen w-full flex-col">
             <Header locale={locale} />
             {children}
-            <Footer />
+            <Footer locale={locale} />
           </div>
         </NextIntlClientProvider>
       </body>
