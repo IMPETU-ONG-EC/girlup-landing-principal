@@ -1,5 +1,6 @@
-import { ImageResponse } from "next/og";
+import { Locale } from "@/src/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import { ImageResponse } from "next/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -7,7 +8,7 @@ export const contentType = "image/png";
 export default async function OpenGraphImage({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Home" });
