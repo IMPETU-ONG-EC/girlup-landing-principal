@@ -1,11 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { routing } from "@/src/i18n/routing";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
 import { JsonLd, orgSchema, websiteSchema } from "@/src/seo/jsonld";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { Footer } from "@/src/shared/components/Footer";
 import { Header } from "@/src/shared/components/Header";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
+import { Geist, Geist_Mono } from "next/font/google";
+import { notFound } from "next/navigation";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -123,6 +124,7 @@ export default async function LocaleLayout({
           <div className="relative flex h-auto min-h-screen w-full flex-col">
             <Header locale={locale} />
             {children}
+            <Footer />
           </div>
         </NextIntlClientProvider>
       </body>

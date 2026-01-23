@@ -1,7 +1,10 @@
-import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
+"use client";
 import { cn } from "@/lib/utils";
+import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
+import { useTranslations } from "next-intl";
 
 export const WhoWeAre = () => {
+  const t = useTranslations("Home");
   return (
     <section
       className={cn(
@@ -12,19 +15,15 @@ export const WhoWeAre = () => {
     >
       <div className="flex flex-col items-center gap-4">
         <span className="text-primary font-bold text-sm tracking-widest uppercase">
-          Nuestra Misión
+          {t("nuestraMision")}
         </span>
         <h2 className="text-[#141118] dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-[-0.015em]">
-          Quiénes Somos
+          {t("quienesSomos")}
         </h2>
         <div className="w-20 h-1 bg-primary rounded-full"></div>
       </div>
       <p className="text-[#141118]/80 dark:text-gray-300 text-lg leading-relaxed max-w-180 mx-auto">
-        Girl Up Ecuador es parte de una iniciativa global de la Fundación de las
-        Naciones Unidas. Trabajamos para inspirar a una generación de niñas y
-        jóvenes a ser una fuerza para la igualdad de género y el cambio social.
-        A través de la formación en liderazgo, incidencia política y acción
-        comunitaria, nuestras miembras están transformando sus comunidades.
+        {t("quienesSomosDescripcion")}
       </p>
     </section>
   );

@@ -6,7 +6,14 @@
   },
   "Home": {
     "title": "Girlup Ecuador | Inicio",
-    "description": "Jóvenes liderando el cambio por la igualdad en Ecuador."
+    "description": "Somos un movimiento liderado por jóvenes que empodera a las niñas y a la juventud para lograr la igualdad y justicia en cada rincón del país.",
+    "miniBadge": "Movimiento Juvenil",
+    "h1": "Jóvenes liderando el cambio por la igualdad en Ecuador.",
+    "unete": "Únete a Girl Up",
+    "conoceProyectos": "Conoce proyectos",
+    "nuestraMision": "Nuestra Misión",
+    "quienesSomos": "Quiénes Somos",
+    "quienesSomosDescripcion": "Girl Up Ecuador es parte de una iniciativa global de la Fundación de las Naciones Unidas. Trabajamos para inspirar a una generación de niñas y jóvenes a ser una fuerza para la igualdad de género y el cambio social. A través de la formación en liderazgo, incidencia política y acción comunitaria, nuestras miembras están transformando sus comunidades."
   },
   "About": {
     "title": "Girlup Ecuador | Nosotros",
