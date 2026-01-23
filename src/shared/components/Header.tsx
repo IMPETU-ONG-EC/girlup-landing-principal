@@ -6,6 +6,7 @@ import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { NavItems } from "../constants/app.constants";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export async function Header({ locale }: Readonly<{ locale: Locale }>) {
   const t = await getTranslations({ locale, namespace: "NavItems" });
@@ -37,7 +38,8 @@ export async function Header({ locale }: Readonly<{ locale: Locale }>) {
             );
           })}
         </nav>
-        <div>
+        <div className="flex justify-end items-center gap-2">
+          <LanguageSwitcher />
           <Button className="bg-purple-600 text-white hover:bg-purple-700">
             Donar
           </Button>
