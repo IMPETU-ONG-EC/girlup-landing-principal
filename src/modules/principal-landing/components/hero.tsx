@@ -40,7 +40,7 @@ export function Hero() {
             data-alt="Diverse group of young Ecuadorian women and men laughing and holding a banner outdoors"
             style={{
               backgroundImage:
-                'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("/images/hero-image.png")',
+                'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("/images/hero-image.jpg")',
             }}
           >
             {/* background zoom/parallax suave */}
@@ -53,7 +53,7 @@ export function Hero() {
               viewport={{ once: true, amount: 0.4 }}
               style={{
                 backgroundImage:
-                  'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("/images/hero-image.png")',
+                  'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("/images/hero-image.jpg")',
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
