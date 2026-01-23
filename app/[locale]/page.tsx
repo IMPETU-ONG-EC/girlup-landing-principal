@@ -36,7 +36,6 @@ export default async function Home({
 
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col">
-      <Header />
       <Hero />
       <WhoWeAre />
       <FocusAreas />

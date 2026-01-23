@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { type Locale, routing } from "@/src/i18n/routing";
+import { routing } from "@/src/i18n/routing";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { JsonLd, orgSchema, websiteSchema } from "@/src/seo/jsonld";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { Header } from "@/src/shared/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,18 +25,17 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
-
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
-}>){
-  const {locale} = await params;
+  params: Promise<{ locale: string }>;
+}>) {
+  const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) notFound();
 
@@ -43,16 +43,18 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   return (
-     <html lang={locale}>
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background-light dark:bg-background-dark text-[#141118] dark:text-white`}
       >
         <NextIntlClientProvider messages={messages}>
           {/* Schemas globales */}
-          <JsonLd data={orgSchema(locale as Locale)} />
-          <JsonLd data={websiteSchema(locale as Locale)} />
-
-          {children}
+          <JsonLd data={orgSchema(locale)} />
+          <JsonLd data={websiteSchema(locale)} />
+          <div className="relative flex h-auto min-h-screen w-full flex-col">
+            <Header locale={locale} />
+            {children}
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

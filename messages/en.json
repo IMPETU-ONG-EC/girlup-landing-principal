@@ -1,4 +1,7 @@
 {
+  "NavItems": {
+    "home": "Home"
+  },
   "Home": {
     "title": "LOREM_IPSUM_HOME_TITLE_EN",
     "description": "LOREM_IPSUM_HOME_DESC_EN"

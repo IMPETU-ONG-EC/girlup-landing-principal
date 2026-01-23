@@ -2,8 +2,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
 import { cn } from "@/lib/utils";
+import { Locale } from "@/src/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
-export function Header() {
+export async function Header({
+  locale
+}: {
+  locale: Locale
+}) {
+  
+  const t = await getTranslations({locale, namespace: 'NavItems'});
   return (
     <header
       className={cn(
@@ -24,10 +32,10 @@ export function Header() {
             href="#inicio"
             className="text-sm font-medium transition-colors hover:text-purple-600"
           >
-            Inicio
+            {t('home')}
           </Link>
           <Link
-            href="#nosotros"
+            href="/about"
             className="text-sm font-medium transition-colors hover:text-purple-600"
           >
             Nosotros
