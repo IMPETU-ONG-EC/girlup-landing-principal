@@ -1,10 +1,7 @@
-import { ContactoPage } from '@/src/pages/Contacto.page'
-import React from 'react'
+import { ContactoPage } from "@/src/pages-custom/Contacto.page";
 
 const page = () => {
-  return (
-    <ContactoPage />
-  )
-}
+  return <ContactoPage />;
+};
 
-export default page
+export default page;

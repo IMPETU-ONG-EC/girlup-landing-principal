@@ -1,5 +1,4 @@
-import { NosotrosPage } from "@/src/pages/Nosotros.page";
-import React from "react";
+import { NosotrosPage } from "@/src/pages-custom/Nosotros.page";
 
 const page = () => {
   return <NosotrosPage />;
