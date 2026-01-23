@@ -13,7 +13,33 @@
     "conoceProyectos": "Conoce proyectos",
     "nuestraMision": "Nuestra Misión",
     "quienesSomos": "Quiénes Somos",
-    "quienesSomosDescripcion": "Girl Up Ecuador es parte de una iniciativa global de la Fundación de las Naciones Unidas. Trabajamos para inspirar a una generación de niñas y jóvenes a ser una fuerza para la igualdad de género y el cambio social. A través de la formación en liderazgo, incidencia política y acción comunitaria, nuestras miembras están transformando sus comunidades."
+    "quienesSomosDescripcion": "Girl Up Ecuador es parte de una iniciativa global de la Fundación de las Naciones Unidas. Trabajamos para inspirar a una generación de niñas y jóvenes a ser una fuerza para la igualdad de género y el cambio social. A través de la formación en liderazgo, incidencia política y acción comunitaria, nuestras miembras están transformando sus comunidades.",
+    "pillars": {
+      "title": "Nuestro Enfoque",
+      "subtitle": "Cinco pilares fundamentales para promover la igualdad y el liderazgo.",
+      "items": {
+        "genderEquality": {
+          "title": "Igualdad de Género",
+          "description": "Promoviendo derechos y oportunidades iguales para todas."
+        },
+        "masculinities": {
+          "title": "Masculinidades",
+          "description": "Involucrando a todos en la redefinición de roles positivos."
+        },
+        "menstrualHealth": {
+          "title": "Salud Menstrual",
+          "description": "Educación y dignidad sin tabúes para niñas y mujeres."
+        },
+        "youthLeadership": {
+          "title": "Liderazgo Juvenil",
+          "description": "Empoderando voces para la incidencia política."
+        },
+        "socialJustice": {
+          "title": "Justicia Social",
+          "description": "Construyendo un futuro más equitativo para todos."
+        }
+      }
+    }
   },
   "About": {
     "title": "Girlup Ecuador | Nosotros",

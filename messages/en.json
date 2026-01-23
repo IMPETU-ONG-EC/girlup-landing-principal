@@ -6,14 +6,40 @@
   },
   "Home": {
     "title": "Girlup Ecuador | Home",
-    "description": "Somos un movimiento liderado por jóvenes que empodera a las niñas y a la juventud para lograr la igualdad y justicia en cada rincón del país.",
-    "miniBadge": "Movimiento Juvenil",
-    "h1": "Jóvenes liderando el cambio por la igualdad en Ecuador.",
-    "unete": "Únete a Girl Up",
-    "conoceProyectos": "Conoce proyectos",
-    "nuestraMision": "Nuestra Misión",
-    "quienesSomos": "Quiénes Somos",
-    "quienesSomosDescripcion": "Girl Up Ecuador es parte de una iniciativa global de la Fundación de las Naciones Unidas. Trabajamos para inspirar a una generación de niñas y jóvenes a ser una fuerza para la igualdad de género y el cambio social. A través de la formación en liderazgo, incidencia política y acción comunitaria, nuestras miembras están transformando sus comunidades."
+    "description": "We are a youth-led movement that empowers girls and young people to achieve equality and justice in every corner of the country.",
+    "miniBadge": "Youth Movement",
+    "h1": "Young people leading change for equality in Ecuador.",
+    "unete": "Join Girl Up",
+    "conoceProyectos": "Explore projects",
+    "nuestraMision": "Our Mission",
+    "quienesSomos": "Who We Are",
+    "quienesSomosDescripcion": "Girl Up Ecuador is part of a global initiative of the United Nations Foundation. We work to inspire a generation of girls and young people to be a force for gender equality and social change. Through leadership training, advocacy, and community action, our members are transforming their communities.",
+    "pillars": {
+      "title": "Our Approach",
+      "subtitle": "Five core pillars to advance equality and leadership.",
+      "items": {
+        "genderEquality": {
+          "title": "Gender Equality",
+          "description": "Promoting equal rights and opportunities for all."
+        },
+        "masculinities": {
+          "title": "Masculinities",
+          "description": "Engaging everyone in redefining positive roles."
+        },
+        "menstrualHealth": {
+          "title": "Menstrual Health",
+          "description": "Education and dignity without taboos for girls and women."
+        },
+        "youthLeadership": {
+          "title": "Youth Leadership",
+          "description": "Empowering voices for policy advocacy."
+        },
+        "socialJustice": {
+          "title": "Social Justice",
+          "description": "Building a more equitable future for everyone."
+        }
+      }
+    }
   },
   "About": {
     "title": "Girlup Ecuador | About",
