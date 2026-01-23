@@ -8,7 +8,7 @@ export const SITE = {
   // Para schema.org
   organization: {
     name: "Girlup Ecuador",
-    logo: "/images/logo.webp",
+    logo: "/manifests/apple-icon-180x180.png",
     sameAs: ["LOREM_IPSUM_SOCIAL_URL_1", "LOREM_IPSUM_SOCIAL_URL_2"],
   },
 } as const;

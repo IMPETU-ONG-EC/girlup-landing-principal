@@ -61,7 +61,7 @@ export function makePageMetadata(args: {
 
   return {
     metadataBase: new URL(SITE.url),
-    icons: "images/logo.webp",
+    icons: "/manifests/apple-icon-180x180.png",
 
     title,
     description,
