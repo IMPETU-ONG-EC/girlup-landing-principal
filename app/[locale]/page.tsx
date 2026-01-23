@@ -20,7 +20,7 @@ export async function generateMetadata({
     locale,
     internalPath: '/',
     title: t('title'),
-    description: t('description')
+    description: t('description'),
   });
 }
 
