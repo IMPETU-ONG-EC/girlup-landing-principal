@@ -7,7 +7,7 @@ export const NavItems: Array<{
   href: UrlTypes;
   labelKey: string;
 }> = [
-  { href: "/", labelKey: "" },
-  { href: "/about", labelKey: "" },
-  { href: "/contact", labelKey: "" },
+  { href: "/", labelKey: "home" },
+  { href: "/about", labelKey: "about" },
+  { href: "/contact", labelKey: "contact" },
 ];

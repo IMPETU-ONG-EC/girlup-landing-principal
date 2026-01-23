@@ -1,17 +1,19 @@
 {
   "NavItems": {
-    "home": "Home"
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
   },
   "Home": {
-    "title": "LOREM_IPSUM_HOME_TITLE_EN",
+    "title": "Girlup Ecuador | Home",
     "description": "LOREM_IPSUM_HOME_DESC_EN"
   },
   "About": {
-    "title": "LOREM_IPSUM_ABOUT_TITLE_EN",
+    "title": "Girlup Ecuador | About",
     "description": "LOREM_IPSUM_ABOUT_DESC_EN"
   },
   "Contact": {
-    "title": "LOREM_IPSUM_CONTACT_TITLE_EN",
+    "title": "Girlup Ecuador | Contact",
     "description": "LOREM_IPSUM_CONTACT_DESC_EN"
   }
 }

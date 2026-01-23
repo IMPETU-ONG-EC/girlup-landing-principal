@@ -1,17 +1,19 @@
 {
   "NavItems": {
-    "home": "Inicio"
+    "home": "Inicio",
+    "about": "Nosotros",
+    "contact": "Contacto"
   },
   "Home": {
-    "title": "LOREM_IPSUM_HOME_TITLE_ES",
-    "description": "LOREM_IPSUM_HOME_DESC_ES"
+    "title": "Girlup Ecuador | Inicio",
+    "description": "Jóvenes liderando el cambio por la igualdad en Ecuador."
   },
   "About": {
-    "title": "LOREM_IPSUM_ABOUT_TITLE_ES",
+    "title": "Girlup Ecuador | Nosotros",
     "description": "LOREM_IPSUM_ABOUT_DESC_ES"
   },
   "Contact": {
-    "title": "LOREM_IPSUM_CONTACT_TITLE_ES",
+    "title": "Girlup Ecuador | Contacto",
     "description": "LOREM_IPSUM_CONTACT_DESC_ES"
   }
 }

@@ -4,14 +4,10 @@ import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
 import { cn } from "@/lib/utils";
 import { Locale } from "@/src/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import { NavItems } from "../constants/app.constants";
 
-export async function Header({
-  locale
-}: {
-  locale: Locale
-}) {
-  
-  const t = await getTranslations({locale, namespace: 'NavItems'});
+export async function Header({ locale }: Readonly<{ locale: Locale }>) {
+  const t = await getTranslations({ locale, namespace: "NavItems" });
   return (
     <header
       className={cn(
@@ -28,41 +24,23 @@ export async function Header({
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link
-            href="#inicio"
-            className="text-sm font-medium transition-colors hover:text-purple-600"
-          >
-            {t('home')}
-          </Link>
-          <Link
-            href="/about"
-            className="text-sm font-medium transition-colors hover:text-purple-600"
-          >
-            Nosotros
-          </Link>
-          <Link
-            href="#proyectos"
-            className="text-sm font-medium transition-colors hover:text-purple-600"
-          >
-            Proyectos
-          </Link>
-          <Link
-            href="#noticias"
-            className="text-sm font-medium transition-colors hover:text-purple-600"
-          >
-            Noticias
-          </Link>
-          <Link
-            href="#contacto"
-            className="text-sm font-medium transition-colors hover:text-purple-600"
-          >
-            Contacto
-          </Link>
+          {NavItems.map(({ href, labelKey }) => {
+            return (
+              <Link
+                href={href}
+                className="text-sm font-medium transition-colors hover:text-purple-600"
+                key={labelKey}
+              >
+                {t(labelKey)}
+              </Link>
+            );
+          })}
         </nav>
-
-        <Button className="bg-purple-600 text-white hover:bg-purple-700">
-          Donar
-        </Button>
+        <div>
+          <Button className="bg-purple-600 text-white hover:bg-purple-700">
+            Donar
+          </Button>
+        </div>
       </div>
     </header>
   );
