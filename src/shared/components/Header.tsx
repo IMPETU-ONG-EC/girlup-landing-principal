@@ -1,9 +1,10 @@
-import Link from "next/link";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "@/components/ui/button";
-import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
 import { cn } from "@/lib/utils";
 import { Locale } from "@/src/i18n/routing";
+import { MINIMUN_PADDING_SECTIONS } from "@/src/shared/constants/styled";
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import { NavItems } from "../constants/app.constants";
 
 export async function Header({ locale }: Readonly<{ locale: Locale }>) {
@@ -31,7 +32,7 @@ export async function Header({ locale }: Readonly<{ locale: Locale }>) {
                 className="text-sm font-medium transition-colors hover:text-purple-600"
                 key={labelKey}
               >
-                {t(labelKey)}
+                {t(labelKey as any)}
               </Link>
             );
           })}
